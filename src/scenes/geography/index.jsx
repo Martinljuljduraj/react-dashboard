@@ -10,7 +10,7 @@ const Geography = () => {
       <Header title="Geography" subtitle="Checks from where the data is coming from" />
 
       <Box
-        height="75vh"
+        height="120vh"
         border={`1px solid ${colors.gray[100]}`}
         borderRadius="4px"
       >
