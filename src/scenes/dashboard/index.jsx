@@ -276,20 +276,23 @@ function Dashboard() {
           gridColumn={isXlDevices ? "span 4" : "span 3"}
           gridRow="span 2"
           backgroundColor={colors.primary[400]}
+          display="flex"
+          flexDirection="column"
+          alignItems="center"
+          padding="20px"
         >
-          <Typography
-            variant="h5"
-            fontWeight="600"
-            sx={{ p: "30px 30px 0 30px" }}
-          >
+          <Typography variant="h5" fontWeight="600">
             Sales Quantity
           </Typography>
+
           <Box
             display="flex"
+            flexDirection="column"
             alignItems="center"
             justifyContent="center"
-            height="250px"
-            mt="-20px"
+            width="100%"
+            minHeight="250px"
+            paddingTop="10px"
           >
             <BarChart isDashboard={true} />
           </Box>
@@ -307,9 +310,11 @@ function Dashboard() {
           </Typography>
           <Box
             display="flex"
+            flexDirection="column"
             alignItems="center"
             justifyContent="center"
-            height="200px"
+            height="auto"
+            minHeight="150px"
           >
             <GeographyChart isDashboard={true} />
           </Box>
